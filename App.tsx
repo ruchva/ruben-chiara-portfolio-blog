@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import CaseStudy from './pages/CaseStudy';
 
 const Dock: React.FC = () => {
   const location = useLocation();
@@ -24,9 +25,8 @@ const Dock: React.FC = () => {
           <Link
             key={item.path}
             to={item.path}
-            className={`relative flex flex-col items-center justify-center w-12 h-12 rounded-xl transition-all duration-200 group ${
-              isActive(item.path) ? 'text-primary bg-primary/10' : 'text-text-muted hover:text-white hover:bg-white/5'
-            }`}
+            className={`relative flex flex-col items-center justify-center w-12 h-12 rounded-xl transition-all duration-200 group ${isActive(item.path) ? 'text-primary bg-primary/10' : 'text-text-muted hover:text-white hover:bg-white/5'
+              }`}
           >
             <span className="material-symbols-outlined text-[24px] group-hover:-translate-y-1 transition-transform">
               {item.icon}
@@ -56,9 +56,6 @@ const Header: React.FC = () => (
       </div>
     </div>
     <div className="hidden sm:flex gap-4">
-      <button className="h-10 px-6 rounded-xl bg-card border border-card-border text-white text-sm font-bold hover:bg-card-border transition-colors">
-        Resume
-      </button>
       <Link to="/contact" className="h-10 px-6 rounded-xl bg-primary text-white text-sm font-bold hover:bg-blue-600 transition-colors flex items-center">
         Hire Me
       </Link>
@@ -75,6 +72,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<CaseStudy />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

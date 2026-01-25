@@ -58,10 +58,19 @@ export const BLOG_POSTS: BlogPost[] = [
 ];
 
 export const TECH_STACK = [
-  { name: 'React', icon: 'code_blocks', color: 'text-blue-400' },
+  { name: 'Java', icon: 'terminal', color: 'text-red-400' },
   { name: 'Spring Boot', icon: 'settings_b_roll', color: 'text-green-500' },
   { name: 'Postgres', icon: 'database', color: 'text-indigo-400' },
-  { name: 'TypeScript', icon: 'javascript', color: 'text-blue-500' },
-  { name: 'Tailwind', icon: 'css', color: 'text-cyan-400' },
-  { name: 'Java', icon: 'terminal', color: 'text-red-400' }
+  { name: 'React', icon: 'code_blocks', color: 'text-blue-400' },
+  { name: 'Node.js', icon: 'terminal', color: 'text-yellow-400' },
+  { name: 'WildFly', icon: 'web', color: 'text-red-400' },
+  { name: 'Linux', icon: 'terminal', color: 'text-green-400' },
+  { name: 'Docker', icon: 'box', color: 'text-blue-400' },
 ];
+
+export const SOCIAL_LINKS = {
+  github: 'https://github.com/ruchva',
+  linkedin: 'https://www.linkedin.com/in/ruben-chiara',
+  email: 'ruchva@gmail.com',
+  whatsapp: 'https://wa.me/59174048770',
+};
