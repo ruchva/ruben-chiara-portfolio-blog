@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import Mermaid from '../src/components/Mermaid';
 
 const CaseStudy: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -40,8 +42,22 @@ const CaseStudy: React.FC = () => {
                 Back to Work
             </Link>
 
-            <article className="prose prose-invert prose-lg max-w-none prose-headings:font-black prose-headings:tracking-tight prose-a:text-primary prose-img:rounded-3xl">
-                <Markdown>{content}</Markdown>
+            <article className="prose prose-invert prose-lg max-w-none prose-headings:font-black prose-headings:tracking-tight prose-a:text-primary prose-img:rounded-3xl prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800">
+                <Markdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                        code(props) {
+                            const { children, className, node, ...rest } = props
+                            const match = /language-(\w+)/.exec(className || '')
+                            if (match && match[1] === 'mermaid') {
+                                return <Mermaid chart={String(children).replace(/\n$/, '')} />
+                            }
+                            return <code className={className} {...rest}>{children}</code>
+                        }
+                    }}
+                >
+                    {content}
+                </Markdown>
             </article>
         </div>
     );
