@@ -1,12 +1,12 @@
 # Portal de Logros Educativos
 
-Cómo Bolivia está Revolucionando su Educación con Datos:
+Revolucionando la Educación con Datos:
 
 Introducción
 
-Los gobiernos de todo el mundo recopilan enormes volúmenes de datos, pero con frecuencia esta información permanece atrapada en bases de datos complejas y reportes estáticos, inaccesibles para quienes más la necesitan. Convertir estas cifras en decisiones estratégicas es uno de los mayores desafíos de la gestión pública moderna.
+Los gobiernos de todo el mundo recopilan enormes volúmenes de datos, pero con frecuencia esta información permanece en bases de datos complejas o reportes estáticos. Convertir estas cifras en decisiones estratégicas es uno de los mayores desafíos de la gestión pública moderna.
 
-En este contexto, Bolivia ha dado un paso audaz con su "Portal de Logros", una plataforma analítica avanzada que aborda este problema de frente. Más que un simple repositorio de estadísticas, esta herramienta transforma datos complejos del panorama educativo en "conocimiento accionable". Lo logra a través de dashboards interactivos, análisis geográficos y una visión integral que conecta programas dispares.
+En este contexto, El "Portal de Logros", es una plataforma analítica que aborda este problema de frente. Más que un simple repositorio de estadísticas, esta herramienta transforma datos complejos del panorama educativo en "conocimiento accionable". Lo logra a través de dashboards interactivos, análisis geográficos y una visión integral que conecta programas dispares.
 
 A continuación, revelaremos cuatro de los hallazgos más sorprendentes e impactantes que ofrece esta plataforma, demostrando cómo la tecnología y una visión clara pueden redefinir el futuro de la educación de un país.
 
