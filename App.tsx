@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import CaseStudy from './pages/CaseStudy';
+import BlogPost from './pages/BlogPost';
 
 const Dock: React.FC = () => {
   const location = useLocation();
@@ -74,6 +75,7 @@ const App: React.FC = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<CaseStudy />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <radialGradient id="g1" cx="80%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#137fec" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="#0a0f14"/>
+  <rect width="800" height="480" fill="url(#g1)"/>
+
+  <!-- rising trajectory bars -->
+  <g>
+    <rect x="120" y="340" width="56" height="90" rx="10" fill="url(#bar)"/>
+    <rect x="210" y="300" width="56" height="130" rx="10" fill="url(#bar)"/>
+    <rect x="300" y="250" width="56" height="180" rx="10" fill="url(#bar)"/>
+    <rect x="390" y="190" width="56" height="240" rx="10" fill="url(#bar)"/>
+    <rect x="480" y="130" width="56" height="300" rx="10" fill="url(#bar)"/>
+  </g>
+
+  <!-- trajectory line -->
+  <polyline points="148,355 238,315 328,270 418,210 508,150" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="508" cy="150" r="7" fill="#22d3ee"/>
+
+  <!-- floating chip -->
+  <g>
+    <rect x="560" y="80" width="190" height="56" rx="14" fill="#111820" stroke="#1e2936"/>
+    <circle cx="582" cy="108" r="5" fill="#22d3ee"/>
+    <text x="598" y="104" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="800">Trayectoria</text>
+    <text x="598" y="122" fill="#92adc9" font-family="Inter, sans-serif" font-size="10.5">académica</text>
+  </g>
+
+  <text x="120" y="60" fill="#92adc9" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="2">PORTAL DE LOGROS EDUCATIVOS</text>
+</svg>

@@ -14,8 +14,14 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   date: string;
-  category: string;
+  category: 'Engineering' | 'Industry';
   readingTime: string;
+}
+
+export interface TechStackItem {
+  name: string;
+  slug: string;
+  hex: string;
 }
 
 export type NavItem = 'home' | 'work' | 'blog' | 'contact';

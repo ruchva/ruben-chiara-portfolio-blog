@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="ob1" cx="85%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#137fec" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#137fec" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ob2" cx="5%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a0f14"/>
+  <rect width="1200" height="630" fill="url(#ob1)"/>
+  <rect width="1200" height="630" fill="url(#ob2)"/>
+
+  <!-- open ecosystem motif: central node fanning out, echoing "modelo abierto" -->
+  <g stroke="#1e2936" stroke-width="2">
+    <line x1="980" y1="330" x2="880" y2="230"/>
+    <line x1="980" y1="330" x2="880" y2="430"/>
+    <line x1="980" y1="330" x2="1080" y2="230"/>
+    <line x1="980" y1="330" x2="1080" y2="430"/>
+    <line x1="980" y1="330" x2="1000" y2="470"/>
+    <line x1="980" y1="330" x2="960" y2="190"/>
+  </g>
+  <circle cx="980" cy="330" r="14" fill="#137fec"/>
+  <circle cx="880" cy="230" r="7" fill="#22d3ee"/>
+  <circle cx="880" cy="430" r="7" fill="#8b5cf6"/>
+  <circle cx="1080" cy="230" r="7" fill="#22c55e"/>
+  <circle cx="1080" cy="430" r="7" fill="#f59e0b"/>
+  <circle cx="1000" cy="470" r="7" fill="#22d3ee"/>
+  <circle cx="960" cy="190" r="7" fill="#8b5cf6"/>
+
+  <!-- eyebrow -->
+  <text x="80" y="140" fill="#92adc9" font-family="Inter, sans-serif" font-size="16" font-weight="700" letter-spacing="3">INDUSTRY · FINTECH</text>
+
+  <!-- title -->
+  <text x="78" y="210" fill="#ffffff" font-family="Inter, sans-serif" font-size="52" font-weight="900">Open Banking</text>
+  <text x="78" y="266" fill="#ffffff" font-family="Inter, sans-serif" font-size="52" font-weight="900">en <tspan fill="#137fec">Bolivia</tspan></text>
+  <text x="80" y="310" fill="#92adc9" font-family="Inter, sans-serif" font-size="18" font-weight="500">La próxima frontera para la innovación financiera</text>
+
+  <!-- stat chips -->
+  <g font-family="Inter, sans-serif">
+    <g>
+      <rect x="80" y="380" width="220" height="100" rx="18" fill="#111820" stroke="#1e2936"/>
+      <text x="104" y="430" fill="#137fec" font-size="34" font-weight="900">67.5%</text>
+      <text x="104" y="456" fill="#92adc9" font-size="12" font-weight="600">internautas en Bolivia</text>
+    </g>
+    <g>
+      <rect x="320" y="380" width="220" height="100" rx="18" fill="#111820" stroke="#1e2936"/>
+      <text x="344" y="430" fill="#22c55e" font-size="34" font-weight="900">$440M</text>
+      <text x="344" y="456" fill="#92adc9" font-size="12" font-weight="600">procesados vía QR "Simple"</text>
+    </g>
+    <g>
+      <rect x="560" y="380" width="180" height="100" rx="18" fill="#111820" stroke="#1e2936"/>
+      <text x="584" y="430" fill="#8b5cf6" font-size="34" font-weight="900">7</text>
+      <text x="584" y="456" fill="#92adc9" font-size="12" font-weight="600">pilares regulatorios clave</text>
+    </g>
+  </g>
+</svg>

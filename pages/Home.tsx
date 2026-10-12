@@ -71,11 +71,14 @@ const Home: React.FC = () => {
                   key={tech.name}
                   className="flex flex-col items-center justify-center gap-2 p-4 rounded-2xl bg-card-border border border-white/5 hover:border-primary/30 transition-all group/stack"
                 >
-                  <span
-                    className={`material-symbols-outlined text-[32px] ${tech.color} group-hover/stack:scale-110 transition-transform`}
-                  >
-                    {tech.icon}
-                  </span>
+                  <img
+                    src={`https://cdn.simpleicons.org/${tech.slug}/${tech.hex}`}
+                    alt={tech.name}
+                    width={32}
+                    height={32}
+                    loading="lazy"
+                    className="size-8 group-hover/stack:scale-110 transition-transform"
+                  />
                   <span className="text-[11px] font-bold text-slate-300">
                     {tech.name}
                   </span>

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants';
 
 const Blog: React.FC = () => {
@@ -14,7 +15,7 @@ const Blog: React.FC = () => {
 
       <div className="space-y-8">
         {BLOG_POSTS.map((post) => (
-          <article key={post.id} className="group p-8 rounded-3xl border border-card-border bg-card hover:border-primary/40 transition-all">
+          <Link to={`/blog/${post.id}`} key={post.id} className="block group p-8 rounded-3xl border border-card-border bg-card hover:border-primary/40 transition-all">
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-32 flex-shrink-0">
                 <p className="text-sm font-mono text-text-muted mb-2">{post.date}</p>
@@ -34,11 +35,11 @@ const Blog: React.FC = () => {
                     <span className="material-symbols-outlined text-[16px]">schedule</span>
                     {post.readingTime}
                   </span>
-                  <button className="text-primary hover:underline">Read Article</button>
+                  <span className="text-primary group-hover:underline">Read Article</span>
                 </div>
               </div>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </div>

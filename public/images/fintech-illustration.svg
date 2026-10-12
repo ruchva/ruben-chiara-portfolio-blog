@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <radialGradient id="gf1" cx="85%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="col" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="#0a0f14"/>
+  <rect width="800" height="480" fill="url(#gf1)"/>
+
+  <!-- pediment -->
+  <polygon points="400,90 540,170 260,170" fill="#111820" stroke="#1e2936"/>
+  <!-- columns -->
+  <g>
+    <rect x="270" y="170" width="26" height="190" fill="url(#col)"/>
+    <rect x="330" y="170" width="26" height="190" fill="url(#col)"/>
+    <rect x="390" y="170" width="26" height="190" fill="url(#col)"/>
+    <rect x="450" y="170" width="26" height="190" fill="url(#col)"/>
+    <rect x="510" y="170" width="26" height="190" fill="url(#col)"/>
+  </g>
+  <!-- base -->
+  <rect x="250" y="360" width="306" height="22" rx="4" fill="#111820" stroke="#1e2936"/>
+
+  <!-- data nodes around -->
+  <g stroke="#2c2c45" stroke-width="2" fill="none">
+    <path d="M150,120 L260,170"/>
+    <path d="M650,120 L540,170"/>
+    <path d="M150,400 L250,375"/>
+    <path d="M650,400 L556,375"/>
+  </g>
+  <circle cx="150" cy="120" r="6" fill="#a78bfa"/>
+  <circle cx="650" cy="120" r="6" fill="#a78bfa"/>
+  <circle cx="150" cy="400" r="6" fill="#a78bfa"/>
+  <circle cx="650" cy="400" r="6" fill="#a78bfa"/>
+
+  <g>
+    <rect x="40" y="60" width="230" height="56" rx="14" fill="#111820" stroke="#1e2936"/>
+    <circle cx="62" cy="88" r="5" fill="#a78bfa"/>
+    <text x="78" y="84" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="800">Core Bancario</text>
+    <text x="78" y="102" fill="#92adc9" font-family="Inter, sans-serif" font-size="10.5">Java · Oracle · JBoss</text>
+  </g>
+
+  <text x="40" y="430" fill="#92adc9" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="2">INFRAESTRUCTURA FINANCIERA</text>
+</svg>

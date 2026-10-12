@@ -14,7 +14,7 @@ No test or lint commands are configured.
 
 ## Architecture
 
-React 19 + TypeScript SPA built with Vite. React Router DOM v7 handles routing. Tailwind CSS is loaded via CDN (configured inline in `index.html` — not via a config file). No backend.
+React 19 + TypeScript SPA built with Vite. React Router DOM v7 handles routing. Tailwind CSS is loaded via CDN (configured inline in `index.html` - not via a config file). No backend.
 
 ### Routing & Layout
 

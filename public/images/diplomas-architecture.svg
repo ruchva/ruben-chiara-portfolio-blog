@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <radialGradient id="glow1" cx="85%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#137fec" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#137fec" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="10%" cy="95%" r="55%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2c7fd4"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="480" fill="#0a0f14"/>
+  <rect x="0" y="0" width="800" height="480" fill="url(#glow1)"/>
+  <rect x="0" y="0" width="800" height="480" fill="url(#glow2)"/>
+
+  <text x="40" y="38" fill="#92adc9" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="2">ECOSISTEMA DIPLOMAS · MINEDU</text>
+
+  <!-- connectors -->
+  <g stroke="#2c4255" stroke-width="2" fill="none">
+    <path d="M240,102 L300,102" marker-end="url(#arrow)"/>
+    <path d="M520,102 L560,102" marker-end="url(#arrow)"/>
+    <path d="M350,134 L350,190" marker-end="url(#arrow)"/>
+    <path d="M200,218 L240,218" marker-end="url(#arrow)"/>
+    <path d="M460,134 L560,190" marker-end="url(#arrow)"/>
+    <path d="M120,246 L120,300" marker-end="url(#arrow)"/>
+    <path d="M340,246 L340,300" marker-end="url(#arrow)"/>
+    <path d="M580,246 L440,300" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- row 1 -->
+  <g font-family="Inter, sans-serif">
+    <g>
+      <rect x="40" y="70" width="200" height="64" rx="14" fill="#111820" stroke="#1e2936"/>
+      <circle cx="62" cy="94" r="5" fill="#61dafb"/>
+      <text x="78" y="99" fill="#ffffff" font-size="16" font-weight="800">Next.js</text>
+      <text x="62" y="118" fill="#92adc9" font-size="11">Frontend multi-rol</text>
+    </g>
+    <g>
+      <rect x="300" y="70" width="220" height="64" rx="14" fill="#111820" stroke="#137fec" stroke-opacity="0.5"/>
+      <circle cx="322" cy="94" r="5" fill="#137fec"/>
+      <text x="338" y="99" fill="#ffffff" font-size="16" font-weight="800">Spring Boot API</text>
+      <text x="322" y="118" fill="#92adc9" font-size="11">diploma-backend</text>
+    </g>
+    <g>
+      <rect x="560" y="70" width="200" height="64" rx="14" fill="#111820" stroke="#1e2936"/>
+      <circle cx="582" cy="94" r="5" fill="#8b5cf6"/>
+      <text x="598" y="99" fill="#ffffff" font-size="16" font-weight="800">Ciudadanía Digital</text>
+      <text x="582" y="118" fill="#92adc9" font-size="11">SSO nacional (AGETIC)</text>
+    </g>
+
+    <!-- row 2 -->
+    <g>
+      <rect x="40" y="190" width="160" height="56" rx="12" fill="#111820" stroke="#1e2936"/>
+      <circle cx="60" cy="212" r="4.5" fill="#ff4438"/>
+      <text x="74" y="216" fill="#ffffff" font-size="14" font-weight="700">Redis</text>
+      <text x="60" y="233" fill="#92adc9" font-size="10.5">cola de trabajos</text>
+    </g>
+    <g>
+      <rect x="240" y="190" width="200" height="56" rx="12" fill="#111820" stroke="#1e2936"/>
+      <circle cx="260" cy="212" r="4.5" fill="#f59e0b"/>
+      <text x="274" y="216" fill="#ffffff" font-size="14" font-weight="700">servicio-diploma</text>
+      <text x="260" y="233" fill="#92adc9" font-size="10.5">worker PDF (Batik/PDFBox)</text>
+    </g>
+    <g>
+      <rect x="480" y="190" width="200" height="56" rx="12" fill="#111820" stroke="#1e2936"/>
+      <circle cx="500" cy="212" r="4.5" fill="#22c55e"/>
+      <text x="514" y="216" fill="#ffffff" font-size="14" font-weight="700">firma-digital</text>
+      <text x="500" y="233" fill="#92adc9" font-size="10.5">firma PAdES (Jacobitus)</text>
+    </g>
+
+    <!-- row 3 -->
+    <g>
+      <rect x="40" y="300" width="160" height="50" rx="12" fill="#111820" stroke="#1e2936"/>
+      <text x="60" y="330" fill="#ffffff" font-size="13" font-weight="700">PostgreSQL</text>
+    </g>
+    <g>
+      <rect x="240" y="300" width="200" height="50" rx="12" fill="#111820" stroke="#1e2936"/>
+      <text x="260" y="330" fill="#ffffff" font-size="13" font-weight="700">S3 / MinIO</text>
+    </g>
+    <g>
+      <rect x="480" y="300" width="200" height="50" rx="12" fill="#111820" stroke="#1e2936"/>
+      <text x="500" y="330" fill="#ffffff" font-size="13" font-weight="700">Grafana / OTel</text>
+    </g>
+
+    <!-- infra band -->
+    <rect x="40" y="396" width="640" height="48" rx="14" fill="#137fec" fill-opacity="0.08" stroke="#137fec" stroke-opacity="0.35"/>
+    <text x="360" y="425" fill="#cfe4ff" font-size="13" font-weight="700" text-anchor="middle">Ansible · Infraestructura como código (datos · workers · edge)</text>
+  </g>
+</svg>
